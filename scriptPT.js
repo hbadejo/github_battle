@@ -49,13 +49,13 @@ addEventListener('DOMContentLoaded', function () {
  
     function begBat () { 
         location.reload();
-        const resultUrl = '/result.html';
+        const resultUrl = 'https://hbadejo.github.io/result.html';
         window.location = resultUrl;
     };
 
     function resPlay () {
         localStorage.clear();
-        const playerOneUrl = '/playerOne.html';
+        const playerOneUrl = 'https://hbadejo.github.io/playerOne.html';
         window.location = playerOneUrl;
     };
 
