@@ -70,7 +70,7 @@ addEventListener('DOMContentLoaded', function () {
 
     function replay () {
         localStorage.clear();
-        const indexUrl = '/index.html';
+        const indexUrl = 'https://hbadejo.github.io/index.html';
         window.location = indexUrl;
     };
 
