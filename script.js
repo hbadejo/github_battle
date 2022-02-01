@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function startApp() {
 
         localStorage.clear();
-        let appStr = "/playerOne.html";
+        let appStr = "https://hbadejo.github.io/playerOne.html";
         window.location = appStr;
         
     };
