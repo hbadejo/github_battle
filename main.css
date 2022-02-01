@@ -1,0 +1,84 @@
+body {
+  margin: 30px auto;
+  padding: 0;
+  text-align: center;
+}
+
+button,
+a {
+  background: lightgreen;
+  display: block;
+  font-size: 30px;
+  padding: 5px;
+  border: 1px solid green;
+  border-radius: 10px;
+  width: 300px;
+  margin: 15px auto;
+  text-decoration: none;
+}
+
+button:hover,
+a:hover {
+  background: #2aaa8a;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+input {
+  text-align: center;
+  width: 80%;
+  height: 30px;
+  max-width: 900px;
+  font-size: 25px;
+  font-weight: 500;
+  border: 2px solid green;
+  border-radius: 8px;
+}
+
+input:focus {
+  border: 2px dashed red;
+}
+
+table {
+  display: inline-block;
+  border: 2px solid blue;
+  border-radius: 20px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+table tr {
+  display: block;
+  border: 1px solid goldenrod;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.player-info tr:first-child {
+  border: none;
+  font-size: 30px;
+}
+
+table td,
+table th {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+table th {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 900;
+  font-size: 50px;
+}
