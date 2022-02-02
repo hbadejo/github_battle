@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function startApp() {
 
         localStorage.clear();
-        let appStr = "/playerOne.html";
+        let appStr = "/github_battle/playerOne.html";
         window.location = appStr;
         
     };
