@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
 
             location.reload();
-            const playerTwoUrl = 'https://hbadejo.github.io/playerTwo.html';
+            const playerTwoUrl = '/playerTwo.html';
             window.location = playerTwoUrl;
         }, 2000);      
     };
