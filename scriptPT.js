@@ -49,13 +49,13 @@ addEventListener('DOMContentLoaded', function () {
  
     function begBat () { 
         location.reload();
-        const resultUrl = '/result.html';
+        const resultUrl = '/github_battle/result.html';
         window.location = resultUrl;
     };
 
     function resPlay () {
         localStorage.clear();
-        const playerOneUrl = '/playerOne.html';
+        const playerOneUrl = '/github_battle/playerOne.html';
         window.location = playerOneUrl;
     };
 
