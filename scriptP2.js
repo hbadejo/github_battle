@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function gotoPTab() {
         setTimeout(() => {
             location.reload();
-            const playerTabUrl = 'https://hbadejo.github.io/playersTable.html';
+            const playerTabUrl = '/playersTable.html';
             window.location = playerTabUrl;
         }, 2000);      
     };
