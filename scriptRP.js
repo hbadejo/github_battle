@@ -70,7 +70,7 @@ addEventListener('DOMContentLoaded', function () {
 
     function replay () {
         localStorage.clear();
-        const indexUrl = '/index.html';
+        const indexUrl = '/github_battle/index.html';
         window.location = indexUrl;
     };
 
