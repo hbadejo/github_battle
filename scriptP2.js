@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function gotoPTab() {
         setTimeout(() => {
             location.reload();
-            const playerTabUrl = '/playersTable.html';
+            const playerTabUrl = '/github_battle/playersTable.html';
             window.location = playerTabUrl;
         }, 2000);      
     };
