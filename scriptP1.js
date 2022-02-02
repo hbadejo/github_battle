@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
 
             location.reload();
-            const playerTwoUrl = '/playerTwo.html';
+            const playerTwoUrl = '/github_battle/playerTwo.html';
             window.location = playerTwoUrl;
         }, 2000);      
     };
