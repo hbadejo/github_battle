@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
            localStorage.setItem("player-one", JSON.stringify(text));
         });
         // Function call
-        callPlay()
+        callPlay();
         }
     });
 
