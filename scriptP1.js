@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
     varDec.getP1Data.addEventListener('click', function (e) {
               
         // check if user has entered a value into the input box
-        if (varDec.player1Name.value === '') {
-            alert('Please enter a valid Github user name');
-            return false;
-        }
+//         if (varDec.player1Name.value === '') {
+//             alert('Please enter a valid Github user name');
+//             return false;
+//         }
 
         // Promise for fetching data from github API
         P1Data = new URL (`https://api.github.com/users/${varDec.player1Name.value}`);
