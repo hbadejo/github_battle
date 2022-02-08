@@ -2,17 +2,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // variable declaration
     const varDec = {
         player2Name: document.querySelector('#player-two'),
-        getP2Data: document.querySelector('#gotoPTabBtn'),
+        getP2Data: document.querySelector('.player-2'),
         };
 
     // Event Lsitener for player 1
-    varDec.getP2Data.addEventListener('click', function (e) {
-              
-        // check if user has entered a value into the input box
-        if (varDec.player2Name.value === '') {
-            return false;
-        }else {
-                    // Promise for fetching data from github API
+    varDec.getP2Data.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+
+        // Promise for fetching data from github API
         P2Data = new URL (`https://api.github.com/users/${varDec.player2Name.value}`);
         const playerTwo = fetch(P2Data).then(function (respone) {
             return respone.json();
@@ -20,8 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
            localStorage.setItem("player-two", JSON.stringify(text));
         });
         // Function call
-        callPlay();
-        }
+        callPlay()  
     });
 
     // function for displaying result from Promise.
@@ -68,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function gotoPTab() {
         setTimeout(() => {
             location.reload();
-            const playerTabUrl = '/github_battle/playersTable.html';
+            const playerTabUrl = '/playersTable.html';
             window.location = playerTabUrl;
         }, 2000);      
     };
