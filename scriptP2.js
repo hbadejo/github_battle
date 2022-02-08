@@ -11,9 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // check if user has entered a value into the input box
         if (varDec.player2Name.value === '') {
             return false;
-        }
-
-        // Promise for fetching data from github API
+        }else {
+                    // Promise for fetching data from github API
         P2Data = new URL (`https://api.github.com/users/${varDec.player2Name.value}`);
         const playerTwo = fetch(P2Data).then(function (respone) {
             return respone.json();
@@ -21,7 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
            localStorage.setItem("player-two", JSON.stringify(text));
         });
         // Function call
-        callPlay()  
+        callPlay();
+        }
     });
 
     // function for displaying result from Promise.
